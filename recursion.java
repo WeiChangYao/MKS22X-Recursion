@@ -9,7 +9,7 @@ public class recursion{
       else{
         return sqrtHelp(n, tolerance, (n/g + g)/2); //runs the same code but with better guess
       }
-    }  
+    }
     public static double sqrt(double n, double tolerance){
       return sqrtHelp(n, tolerance, 1);
     }
@@ -29,7 +29,6 @@ public class recursion{
         return fibonacciHelp(n-1,numA,numB);
       }
     }
-
     public static int fib(int n){
       if (n == 0){
         return 0;
@@ -48,7 +47,6 @@ public class recursion{
         makeAllSumsH(n-1,l,a+n);
       }
     } 
-  
     public static ArrayList<Integer> makeAllSums(int n){
       ArrayList<Integer> list = new ArrayList<Integer>();
       makeAllSumsH(n,list,0);
@@ -56,11 +54,16 @@ public class recursion{
     }
   
     public static void main(String[] args) {
-                      System.out.print(""+ fib(0) + "    ");     
+                      /*System.out.print(""+ fib(0) + "    ");     
                       System.out.print(""+ fib(1) + "    ");    
                       System.out.print(""+ fib(2)  + "    ");    
                       System.out.print(""+ fib(3)  + "    ");    
                       System.out.print(""+ fib(4)  + "    ");   
-                      System.out.print(""+ fib(5)  + "    ");    
+                      System.out.print(""+ fib(5)  + "    ");*/ //fib test
+      ArrayList<Integer> test = new ArrayList<Integer>();
+      test = makeAllSums(3);
+      for (int i = 0; i<test.size(); i++){
+        System.out.println(test.get(i));
+      }
     }
 }
