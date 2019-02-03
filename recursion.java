@@ -54,4 +54,11 @@ public class recursion{
       makeAllSumsH(n,list,0);
       return list;
     }
+  
+    public statipublic static void main(String[] args) {
+      
+      
+      System.out.println(Arrays.deepToString(fib(6).toArray()));
+
+    }
 }
