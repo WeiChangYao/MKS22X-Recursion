@@ -53,7 +53,7 @@ public class recursion{
       return list;
     }
   
-    public static void main(String[] args) {
+ //   public static void main(String[] args) {
                       //fib test
     /*System.out.print(""+ fib(0) + "    ");     
       System.out.print(""+ fib(1) + "    ");    
@@ -67,6 +67,6 @@ public class recursion{
       for (int i = 0; i<test.size(); i++){
         System.out.println(test.get(i));
       }*/
-      System.out.println(""+ sqrt(4,.001));    
-    }
+ //     System.out.println(""+ sqrt(4,.001));    
+ //   } 
 }
