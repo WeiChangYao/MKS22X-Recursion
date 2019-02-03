@@ -44,7 +44,7 @@ public class recursion{
       }
       else{
         makeAllSumsH(n-1,l,a+n);
-        makeAllSumsH(n-1,l,a+n);
+        makeAllSumsH(n-1,l,a);
       }
     } 
     public static ArrayList<Integer> makeAllSums(int n){
