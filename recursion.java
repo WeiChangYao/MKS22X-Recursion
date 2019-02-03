@@ -14,7 +14,7 @@ public class recursion{
       return sqrtHelp(n, tolerance, 1);
     }
 
-    public int fibonacciHelp(int n, int numA, int numB) {
+    public static int fibonacciHelp(int n, int numA, int numB) {
       int oldNumB = 0;
       if (n == 0){
         return numB;
@@ -37,7 +37,7 @@ public class recursion{
       else{
         return fibonacciHelp(n, 0, 1);
       }
-    } 
+    }
    
     public static void makeAllSumsH(int n, ArrayList<Integer> l, int a){
       if(n==0){
