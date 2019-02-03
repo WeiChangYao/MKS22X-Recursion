@@ -14,22 +14,30 @@ public class recursion{
       return sqrtHelp(n, tolerance, 1);
     }
 
-    public int fibonacciHelp(int n, int ans) {
+    public int fibonacciHelp(int n, int numA, int numB) {
+      int oldNumB = 0;
       if (n == 0){
-        return 0;
-      }
-      if (n == 1){
-        return 1;     //NEED BASE CASE + NEED COUNTER?
+        return numB;
       }
       else{
-        ans = ans-1 + ans-2;
-        return fibonacciHelp(n,ans);
+        oldNumB = numB;
+        numB = numA + numB;
+        if (numB == 1){
+          numB = 2;
+        }
+        numA = oldNumB;
+        return fibonacciHelp(n-1,numA,numB);
       }
     }
 
-  /*  public static int fib(int n){
-      return fibonacciHelp(n, 0);
-    } */
+    public static int fib(int n){
+      if (n == 0){
+        return 0;
+      }
+      else{
+        return fibonacciHelp(n, 0, 1);
+      }
+    } 
    
     public static void makeAllSumsH(int n, ArrayList<Integer> l, int a){
       if(n==0){
