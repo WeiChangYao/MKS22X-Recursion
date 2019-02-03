@@ -3,11 +3,11 @@ import java.util.ArrayList;
 public class recursion{
 
     public static double sqrtHelp(double n, double tolerance, double g){
-      if(g*g>(n*tolerance) && g*g<(n*(1-tolerance))){
+      if(g*g>(n*(1+tolerance)) && g*g<(n*(1-tolerance))){ //test if guess is correct
         return g;
       }
       else{
-        return sqrtHelp(n, tolerance, (n/g + g)/2);
+        return sqrtHelp(n, tolerance, (n/g + g)/2); //runs the same code but with better guess
       }
     }  
     public static double sqrt(double n, double tolerance){
@@ -32,7 +32,9 @@ public class recursion{
     }
 
     /*As Per classwork*/
- //   public static ArrayList<Integer> makeAllSums(){
-   // }
+    ArrayList<Integer> answer = new ArrayList<Integer>
+    public static ArrayList<Integer> makeAllSums(){
+      if
+    }
 
 }
