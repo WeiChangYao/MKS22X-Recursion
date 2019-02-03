@@ -54,16 +54,19 @@ public class recursion{
     }
   
     public static void main(String[] args) {
-                      /*System.out.print(""+ fib(0) + "    ");     
-                      System.out.print(""+ fib(1) + "    ");    
-                      System.out.print(""+ fib(2)  + "    ");    
-                      System.out.print(""+ fib(3)  + "    ");    
-                      System.out.print(""+ fib(4)  + "    ");   
-                      System.out.print(""+ fib(5)  + "    ");*/ //fib test
-      ArrayList<Integer> test = new ArrayList<Integer>();
+                      //fib test
+    /*System.out.print(""+ fib(0) + "    ");     
+      System.out.print(""+ fib(1) + "    ");    
+      System.out.print(""+ fib(2)  + "    ");    
+      System.out.print(""+ fib(3)  + "    ");    
+      System.out.print(""+ fib(4)  + "    ");   
+      System.out.print(""+ fib(5)  + "    ");*/ 
+      //makeAllSums test
+    /*ArrayList<Integer> test = new ArrayList<Integer>();
       test = makeAllSums(3);
       for (int i = 0; i<test.size(); i++){
         System.out.println(test.get(i));
-      }
+      }*/
+      System.out.println(""+ sqrt(10,.001) + "    ");    
     }
 }
