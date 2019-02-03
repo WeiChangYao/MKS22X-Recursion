@@ -27,14 +27,23 @@ public class recursion{
       }
     }
 
-    public static int fib(int n){
+  /*  public static int fib(int n){
       return fibonacciHelp(n, 0);
+    } */
+   
+    public static void makeAllSumsH(int n, ArrayList<Integer> l, int a){
+      if(n==0){
+        l.add(a);
+      }
+      else{
+        makeAllSumsH(n-1,l,a+n);
+        makeAllSumsH(n-1,l,a+n);
+      }
+    } 
+  
+    public static ArrayList<Integer> makeAllSums(int n){
+      ArrayList<Integer> list = new ArrayList<Integer>();
+      makeAllSumsH(n,list,0);
+      return list;
     }
-
-    /*As Per classwork*/
-    ArrayList<Integer> answer = new ArrayList<Integer>
-    public static ArrayList<Integer> makeAllSums(){
-      if
-    }
-
 }
