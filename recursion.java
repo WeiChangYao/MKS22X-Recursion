@@ -16,7 +16,7 @@ public class recursion{
 
     public static int fibonacciHelp(int n, int numA, int numB) {
       int oldNumB = 0;
-      if (n == 0){
+      if (n == 1){
         return numB;
       }
       else{
@@ -56,12 +56,11 @@ public class recursion{
     }
   
     public static void main(String[] args) {
-              System.out.print(""+ fib(0) + "    ");     
-      System.out.print(""+ fib(1) + "    ");    
-                System.out.print(""+ fib(2)  + "    ");    
+                      System.out.print(""+ fib(0) + "    ");     
+                      System.out.print(""+ fib(1) + "    ");    
+                      System.out.print(""+ fib(2)  + "    ");    
                       System.out.print(""+ fib(3)  + "    ");    
                       System.out.print(""+ fib(4)  + "    ");   
                       System.out.print(""+ fib(5)  + "    ");    
-
     }
 }
