@@ -31,7 +31,7 @@ public class recursion{
     }
     public static int fib(int n){
       if (n == 0){
-        return 0;
+        return 0;  //0 if n = 0
       }
       else{
         return fibonacciHelp(n, 0, 1);
@@ -40,10 +40,10 @@ public class recursion{
    
     public static void makeAllSumsH(int n, ArrayList<Integer> l, int a){
       if(n==0){
-        l.add(a);
+        l.add(a); 
       }
       else{
-        makeAllSumsH(n-1,l,a+n);
+        makeAllSumsH(n-1,l,a+n);  //run this but add to a and again without adding. Also minus n
         makeAllSumsH(n-1,l,a);
       }
     } 
