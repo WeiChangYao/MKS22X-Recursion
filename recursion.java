@@ -55,10 +55,13 @@ public class recursion{
       return list;
     }
   
-    public statipublic static void main(String[] args) {
-      
-      
-      System.out.println(Arrays.deepToString(fib(6).toArray()));
+    public static void main(String[] args) {
+              System.out.print(""+ fib(0) + "    ");     
+      System.out.print(""+ fib(1) + "    ");    
+                System.out.print(""+ fib(2)  + "    ");    
+                      System.out.print(""+ fib(3)  + "    ");    
+                      System.out.print(""+ fib(4)  + "    ");   
+                      System.out.print(""+ fib(5)  + "    ");    
 
     }
 }
