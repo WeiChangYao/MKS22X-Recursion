@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class recursion{
 
     public static double sqrtHelp(double n, double tolerance, double g){
-      if(g*g>(n*(1+tolerance)) && g*g<(n*(1-tolerance))){ //test if guess is correct
+      if(g*g<(n*(1+tolerance)) && g*g>(n*(1-tolerance))){ //test if guess is correct
         return g;
       }
       else{
@@ -15,17 +15,17 @@ public class recursion{
     }
 
     public static int fibonacciHelp(int n, int numA, int numB) {
-      int oldNumB = 0;
-      if (n == 1){
+      int oldNumB = 0; 
+      if (n == 1){        //this is the base cuz if = 0, ill put 0
         return numB;
       }
       else{
-        oldNumB = numB;
-        numB = numA + numB;
-        if (numB == 1){
+        oldNumB = numB;   //save old b before i change it
+        numB = numA + numB; 
+        if (numB == 1){    //if b is 1, it's 2
           numB = 2;
         }
-        numA = oldNumB;
+        numA = oldNumB;   //a becomes oldB because i need it
         return fibonacciHelp(n-1,numA,numB);
       }
     }
@@ -61,12 +61,12 @@ public class recursion{
       System.out.print(""+ fib(3)  + "    ");    
       System.out.print(""+ fib(4)  + "    ");   
       System.out.print(""+ fib(5)  + "    ");*/ 
-      //makeAllSums test
+                      //makeAllSums test
     /*ArrayList<Integer> test = new ArrayList<Integer>();
       test = makeAllSums(3);
       for (int i = 0; i<test.size(); i++){
         System.out.println(test.get(i));
       }*/
-      System.out.println(""+ sqrt(10,.001) + "    ");    
+      System.out.println(""+ sqrt(4,.001));    
     }
 }
