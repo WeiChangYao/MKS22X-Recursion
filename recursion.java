@@ -56,9 +56,9 @@ public class recursion{
       return list;
     }
   
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
                       //fib test
-    System.out.print(""+ fib(0) + "    ");     
+      System.out.print(""+ fib(0) + "    ");     
       System.out.print(""+ fib(1) + "    ");    
       System.out.print(""+ fib(2)  + "    ");    
       System.out.print(""+ fib(3)  + "    ");    
@@ -67,11 +67,12 @@ public class recursion{
       System.out.print(""+ fib(6)  + "    "); 
       System.out.print(""+ fib(7)  + "    "); 
                       //makeAllSums test
-    /*ArrayList<Integer> test = new ArrayList<Integer>();
+      ArrayList<Integer> test = new ArrayList<Integer>();
       test = makeAllSums(3);
       for (int i = 0; i<test.size(); i++){
         System.out.println(test.get(i));
-      }*/
- //     System.out.println(""+ sqrt(4,.001));    
-    } 
+      }
+                      //sqrt test
+      System.out.println(""+ sqrt(4,.001));    
+    } */
 }
