@@ -19,6 +19,9 @@ public class recursion{
       if (n == 1){        //this is the base cuz if = 0, ill put 0
         return numB;
       }
+      if (n == 2){        //there's probably a better way to do this but, it was an easy solution
+        return numB;      //when it's 2, the answer remains 1
+      }
       else{
         oldNumB = numB;   //save old b before i change it
         numB = numA + numB; 
@@ -53,14 +56,16 @@ public class recursion{
       return list;
     }
   
- //   public static void main(String[] args) {
+    public static void main(String[] args) {
                       //fib test
-    /*System.out.print(""+ fib(0) + "    ");     
+    System.out.print(""+ fib(0) + "    ");     
       System.out.print(""+ fib(1) + "    ");    
       System.out.print(""+ fib(2)  + "    ");    
       System.out.print(""+ fib(3)  + "    ");    
       System.out.print(""+ fib(4)  + "    ");   
-      System.out.print(""+ fib(5)  + "    ");*/ 
+      System.out.print(""+ fib(5)  + "    "); 
+      System.out.print(""+ fib(6)  + "    "); 
+      System.out.print(""+ fib(7)  + "    "); 
                       //makeAllSums test
     /*ArrayList<Integer> test = new ArrayList<Integer>();
       test = makeAllSums(3);
@@ -68,5 +73,5 @@ public class recursion{
         System.out.println(test.get(i));
       }*/
  //     System.out.println(""+ sqrt(4,.001));    
- //   } 
+    } 
 }
